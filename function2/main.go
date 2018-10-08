@@ -1,44 +1,18 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func getLaptop()string{
-	merk := "samsung"
-	return merk
+func getUmur(user string) int {
+	if user == "Kukuh" {
+		return 28
+	} else if user == "Imam" {
+		return 23
+	} else {
+		return 25
+	}
 }
 
-func getYear() int{
-	year := 2013
-	return year
-}
-
-func getPeople() string{
-	people := "ewonich"
-	return people
-}
-
-func getLive(){
-	fmt.Println("Bekasi")
-}
-
-func getProvince(){
-	fmt.Println("Jawa Barat")
-}
-
-func getCountry(){
-	fmt.Println("indonesia")
-}
-
-func main(){
-	var merk = getLaptop()
-	var year = getYear()
-	var people = getPeople()
-	fmt.Println(merk)
-	fmt.Println(year)
-	fmt.Println(people)
-	getLive()
-	getProvince()
-	getCountry()
+func main() {
+	umur := getUmur("Kukuh")
+	fmt.Println(umur)
 }
