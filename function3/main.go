@@ -49,12 +49,17 @@ func pesan(){
 	fmt.Println(message)
 }
 
+func tambah(a int, b int) int{
+	return a + b
+}
+
 
 func main(){
 	var first, secound, third = "eko", "bambang", "sadewo"
 	_ = "ilang pasti\n"
 
 	fmt.Println(first, secound, third)
+	fmt.Println(tambah(10, 5))
 	underscore()
 	number()
 	decimal()
