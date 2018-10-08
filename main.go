@@ -1,11 +1,22 @@
 package main
 
-import(
-    "fmt"
+import (
+	"fmt"
 )
 
-func main(){
+// function yang memberikan return
+func getUser() string {
+	a := "Mami Euis"
+	return a
+}
 
-	var firstName = "sadewo"
-	fmt.Println(firstName)
+// function yang tidak memberikan return
+func getAlamat() {
+	fmt.Println("Pondok Bambu")
+}
+
+func main() {
+	var nama = getUser()
+	fmt.Println(nama)
+	getAlamat()
 }
