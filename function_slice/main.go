@@ -78,10 +78,69 @@ func capEuy() {
 
 }
 
+func elemenSlice() {
+	var cars = []string{"toyota", "nissan", "buggati"}
+	var aCars = cars[0:2]
+	var bCars = cars[0:2:2]
+
+	fmt.Println(cars)
+	fmt.Println(len(cars))
+	fmt.Println(cap(cars))
+
+	fmt.Println(aCars)
+	fmt.Println(len(aCars))
+	fmt.Println(cap(aCars))
+
+	fmt.Println(bCars)
+	fmt.Println(len(bCars))
+	fmt.Println(cap(bCars))
+
+}
+
+func nambahElemenslice() {
+	var vanara = []string{"pram", "wahyu", "kukuh"}
+	var cVanara = append(vanara, "sadewo")
+
+	fmt.Println(vanara)
+	fmt.Println(cVanara)
+}
+
+func appendTambahan() {
+	var vanara = []string{"pram", "wahyu", "kukuh"}
+	var bVanara = vanara[0:2]
+
+	fmt.Println(cap(bVanara))
+	fmt.Println(len(bVanara))
+
+	//fmt.Println(vanara)
+	//fmt.Println(bVanara)
+
+	var cVanara = append(bVanara, "sadewo")
+
+	fmt.Println(vanara)
+	fmt.Println(bVanara)
+	fmt.Println(cVanara)
+}
+
+func copySlice() {
+	var vanara = []string{"pram", "sadewo"}
+	var aVanara = []string{"kukuh", "wahyuu"}
+
+	var copyVanara = copy(vanara, aVanara)
+
+	fmt.Println(vanara)
+	fmt.Println(aVanara)
+	fmt.Println(copyVanara)
+}
+
 func main() {
 	//slice()
 	//arrayOperasislice()
 	//sliceTipedatareference()
 	lenArray()
 	capEuy()
+	//elemenSlice()
+	//nambahElemenslice()
+	//appendTambahan()
+	copySlice()
 }
